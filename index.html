@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Generator Zestawienia Imprez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🕺 Generator Zestawienia Imprez</h2>
+
+  <div id="form"></div>
+
+  <label>Hashtagi:</label>
+  <input id="hashtagi" value="#SalsaKatowice #TaniecPodChmurką #SalsaChillout">
+
+  <button id="generuj-btn">Generuj post</button>
+
+  <h3>📋 Wygenerowany post:</h3>
+  <textarea id="wynik" rows="10"></textarea><br>
+  <button onclick="kopiujWynik()">📋 Kopiuj cały post</button>
+
+  <h3>🔢 Wklejka do ankiety:</h3>
+  <textarea id="ankieta" rows="6"></textarea>
+  <div id="kopiuj-ankiete"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
