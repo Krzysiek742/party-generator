@@ -1,17 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dni = ["Piątek", "Sobota", "Niedziela"];
+  const dni = ["Czwartek","Piątek", "Sobota", "Niedziela"];
   const miejscaWgMiasta = {
     "Katowice": ["Marcepan", "Gravitacja", "NOSPR", "GoodMood", "LaClave", "MilPasos", "Taneczna Kompania", "Nowy Dekameron", "Tapas LaFirinda", "Królestwo", "Dolina trzech stawów"],
     "Chorzów": ["Taneczne Kręgi", "Pizzeria Róża"],
     "Tychy": ["Przystań Kajakowa", "Mohito", "Dzika plaża"],
-    "Kraków": ["Sabrosa"],
+    "Kraków": ["Sabrosa","Tropical spot","Tauron Arena"],
     "Bielsko-Biala": ["Festiwal Kubański", "DANCE#LOVEit", "Metrum", "Grzyńskiego", "Hotel Sahara"],
     "Gliwice": ["Mohito", "LaClave", "Rynek"],
     "Bytom": ["Majowa"],
     "Świętochłowice": ["Stylowa Willa"],
     "Tarnowskie Góry": ["Ocean Club"],
-    "Rybnik": ["Pink Bowling & Club"]
+    "Rybnik": ["Pink Bowling & Club"],
+    "Dąbrowa Górnicza": ["Beach Bar Pogoria"]
   };
 
   const style = ["Salsa", "Bachata", "Kizomba", "Zouk", "Linia", "Cubana", "Rumba", "Afro", "Koncert", "Latino", "Reggeton"];
@@ -124,7 +125,7 @@ function kopiujWynik() {
 
 function generujPost() {
   const blocks = document.querySelectorAll(".day-block");
-  const dniTekst = ["PIĄTEK", "SOBOTA", "NIEDZIELA"];
+  const dniTekst = ["CZWARTEK","PIĄTEK", "SOBOTA", "NIEDZIELA"];
   let wynik = "🎉 Zestawienie imprezowe na ten weekend:\n\n";
   let wynikAnkieta = "";
 
