@@ -154,13 +154,13 @@ function generujPost() {
 
       dzienWiersz += `${prefix}${finalMiasto}: ${finalMiejsce} (${styleZaznaczone})${opis.value.trim() ? ` – ${opis.value.trim()}` : ""}\n`;
       if (link && link.value.trim() !== "") {
-        dzienWiersz += `🔗 ${link.value.trim()}\n`;
+        dzienWiersz += `${link.value.trim()}\n`;
       }
       wynikAnkieta += `${dniTekst[idx]}: ${finalMiasto}: ${finalMiejsce} (${styleZaznaczone})\n`;
     });
 
     if (dzienWiersz.trim() !== "") {
-      wynik += `🗕️ ${dniTekst[idx]}:\n` + dzienWiersz + "\n";
+      wynik += `🗓️ ${dniTekst[idx]}:\n` + dzienWiersz + "\n";
     }
   });
 
